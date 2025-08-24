@@ -1,0 +1,39 @@
+### Análisis del problema para el siguiente caso de estudio. 
+Una empresa necesita realizar la reparación de una máquina. Para ello solicitó a un conjunto de oferentes, sus presupuestos. De cada presupuesto se deberá registrar lo siguiente: nombre del oferente, cantidad de días estimados que durará la reparación y el importe total de la reparación. A partir de estos presupuestos, se requiere obtener cierta información estadística que será de utilidad para esta empresa. 
+
+Para ello se nos ha solicitado elaborar un programa estructurado que permita leer la cantidad de presupuestos a cargar, y los datos de los mismos (o la simulación de su carga). La información que se deberá obtener a partir de todos los presupuestos es la siguiente: 
+
+- Importe promedio entre todos los presupuestos. 
+- Nombre del oferente correspondiente al que tenga el menor importe en su presupuesto (suponer que sólo hay un oferente con el importe más bajo en su presupuesto). 
+- Porcentaje de presupuestos cuya duración sea menor o igual a cierta cantidad de referencia.
+
+# Considerar las validaciones de datos necesarias.
+
+Análisis del problema 
+# a) Resultados o salidas de información:
+
+- Importe promedio de todos los presupuestos. 
+- Nombre del oferente con cuyo importe sea el de menor valor. 
+- Porcentaje de presupuestos cuya duración sea menor o igual a cierto valor de referencia. 
+# b) Datos de entrada:
+
+- Cantidad de presupuestos a cargar. 
+- Para cada presupuesto a cargar, se deberá leer: nombre del oferente, importe, duración. 
+
+# c) Procesos: 
+
+1) Leer la cantidad de presupuestos a cargar. 
+2) Para cada presupuesto a cargar, leer: nombre del oferente, importe y duración. 
+3) Para calcular y mostrar el importe promedio: 
+3.1) Para cada presupuesto, realizar la sumatoria del importe. 
+3.2) Dividir la sumatoria obtenida sobre la cantidad de presupuestos cuyo importe se sumó. 
+3.3) Mostrar el importe promedio.
+4) Para determinar el nombre del oferente con el importe más bajo en su presupuesto: 
+4.1) Considerar el nombre del oferente del primer presupuesto como el del presupuesto con importe más bajo hasta el momento. Tomar como referencia el importe de dicho presupuesto y considerarlo como el importe más bajo hasta el momento. 
+4.2) Para cada uno de los restantes presupuestos que hubiese, comparar su importe con el importe considerado más bajo hasta el momento. En caso de ser menor, reemplazarlo por el importe del presupuesto actual; considerar el nombre del oferente del presupuesto actual, como el nombre del oferente del presupuesto con importe más bajo, reemplazando el nombre que hubiese habido antes. 
+4.3) Mostrar el nombre del oferente del presupuesto con importe de presupuesto más bajo. 
+5) Para calcular el porcentaje de presupuestos cuya duración sea menor o igual a cierto valor: 
+5.1) Leer el valor de referencia. 
+5.2) Para cada presupuesto comparar si la duración del mismo es menor o igual al valor de referencia. En caso de serlo, contar ese presupuesto. 
+5.3) Dividir la cantidad de presupuestos que cumplieron la condición sobre la cantidad total de presupuestos considerados, y multiplicar por 100. 
+5.4) Mostrar el porcentaje.
