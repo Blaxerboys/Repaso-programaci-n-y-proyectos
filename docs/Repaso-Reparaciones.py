@@ -1,5 +1,5 @@
 # clase nombre_de_la_clase:
-class Oferentes:
+class Oferente:
     def __init__(self, nombre, dias, importe): #def __init__(self,1,2)
         self.nombre = nombre                   #__init__ y self son keywords.
         self.dias = dias                       #nombre, dias = características.
@@ -45,3 +45,4 @@ porcentaje = 100 * rapidito // cantidad_de_ofertas
 print(f"El promedio de importes es: {importe_promedio}")
 print(f"¡Oferton! {nombre_barato}, te cobra ${importe_viejo}")
 print(f"la cantidad de ofertas que se encuentran por debajo de {parametro_dias} días es de {porcentaje}%")
+
